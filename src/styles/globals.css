@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The trackers' fonts and page colours. Override any --omni-* variable here to retheme. */
+:root {
+  --font-display: 'Bricolage Grotesque Variable';
+  --font-body: 'Nunito Sans Variable';
+}
+
+body {
+  @apply min-h-dvh bg-mist font-body text-ink antialiased;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display tracking-tight;
+}
+
+:focus-visible {
+  @apply outline-none ring-2 ring-tide-500 ring-offset-2 ring-offset-mist;
+}
